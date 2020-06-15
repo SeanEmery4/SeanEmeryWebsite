@@ -1,6 +1,8 @@
 body
 {
-  background: url(img/background.jpg)
+  background: url(img/background.jpg);
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -10,17 +12,77 @@ h1, h2, h3, h4, h5, h6
 
 header
 {
-  background: #5866C3;
   color: #FFFFFF;
+  height: 110px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer
+{
+  color: #FFFFFF;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 div
 {
-  background: #FFFFFF;
+  background: rgba(255,255,255,1);
   color: #000000;
+  padding: 5px 40px;
 }
 
 a
 {
   color: #FFFFFF;
+}
+
+.img-circle
+{
+  border-radius: 100%;
+  box-shadow: 10px 1px 5px #000;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-video
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title
+{
+  font-size: 30px;
+}
+
+.home-title
+{
+  text-align: center;
+  font-size: 50px;
+}
+
+.button
+{
+  text-align: center;
+  display: inline-block;
+  padding-right: 150px;
+  padding-bottom: 2px;
+}
+
+.button:hover
+{
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }
