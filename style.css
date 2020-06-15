@@ -86,3 +86,13 @@ a
   background: rgba(255, 255, 255, 0.5);
   cursor: pointer;
 }
+
+.centre
+{
+  text-align: center;
+}
+
+.video-buttons
+{
+  text-align: center;
+}

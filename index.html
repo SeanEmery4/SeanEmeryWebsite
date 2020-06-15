@@ -1,6 +1,9 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="functions.js" type="text/javascript">
+
+  </script>
 </head>
 <body>
   <header>
@@ -22,7 +25,7 @@
         <source src="audio1.ogg" type="audio/ogg">
         Your browser does not support HTML5 audio
       </audio>
-      <h5>Computer Science Student</h5>
+      <h4>Computer Science Student</h4>
       <p>
         Currently in my second year of a Computer Science degree at Deakin University,
         Melbourne. Enjoy learning how software works and how to develop various types of
@@ -30,18 +33,40 @@
         as document other development skills from my degree. Website development is a valuable
         skill I hope to develop.
         <br><br>
-        Below is a prototype demonstration video for an obstacle detection system on a remote control car. This was
+        Click below for a prototype demonstration video for an obstacle detection system on a remote control car. This was
         completed for my embedded systems unit within my degree.
         <br>
       </p>
-      <iframe class="home-video" width="560" height="315" src="https://www.youtube.com/embed/Kd7qtTyuOGs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <br>
-      <video class="home-video" width="560" height="315" controls>
-        <source src="videos/Movie_Recreation.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        Your browser does not support HTML5 videos
-      </video>
+      <div class="video-buttons">
+        <button type="button" onclick="showDemo();">Project Demo Video</button><br>
+        <br>
+        <button type="button" onclick="showMovie();">Movie Recreation</button><br>
+      </div>
+      <div id="ProjDemo" style="display: none">
+        <iframe class="home-video" width="560" height="315" src="https://www.youtube.com/embed/Kd7qtTyuOGs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+      </div>
+      <div id="movie" style="display: none">
+        <video class="home-video" width="560" height="315" controls>
+          <source src="videos/Movie_Recreation.mp4" type="video/mp4">
+          <source src="movie.ogg" type="video/ogg">
+          Your browser does not support HTML5 videos
+        </video>
+        <br>
+      </div>
+
+      <div class="centre">
+        Enter your age to find out the year you were born: <br>
+        <input type="text" name="age" id="age" placeholder="Age (25)" onchange="Age();">
+        <br><br>
+        Or, Enter the year you were born fo find out your age:<br>
+        <input type="year" name="year" id="year" placeholder="Year (1993)" onchange="Year();">
+      </div>
       <br><br>
+
+      <div class="centre" id="welcome" style="visibility: hidden">
+        <p>Welcome to my Website</p>
+      </div>
     </div>
 
     <br>
