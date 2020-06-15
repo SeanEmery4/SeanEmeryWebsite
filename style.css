@@ -1,0 +1,26 @@
+body
+{
+  background: url(img/background.jpg)
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  color: #1930C1;
+}
+
+header
+{
+  background: #5866C3;
+  color: #FFFFFF;
+}
+
+div
+{
+  background: #FFFFFF;
+  color: #000000;
+}
+
+a
+{
+  color: #FFFFFF;
+}
