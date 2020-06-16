@@ -1,8 +1,8 @@
 body
 {
   background: url(img/background.jpg);
-  margin-left: 90px;
-  margin-right: 90px;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -13,11 +13,31 @@ h1, h2, h3, h4, h5, h6
 header
 {
   color: #FFFFFF;
-  height: 110px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  height: 70px;
+  margin: 10px;
+  font-size: 25px;
+}
+
+#logo
+{
+  margin-top: 15px;
+  float: left;
+  display: block;
+}
+
+nav
+{
+  float: right;
+}
+
+.menu-options
+{
+  list-style: none;
+}
+
+.li-menu
+{
+  display: inline-block;
 }
 
 footer
@@ -73,17 +93,24 @@ a
   font-size: 50px;
 }
 
+.home-button
+{
+  display: inline-block;
+  padding-right: 20px;
+  padding-bottom: 2px;
+}
+
 .button
 {
-  text-align: center;
   display: inline-block;
-  padding-right: 150px;
+  padding-right: 50px;
+  padding-left: 50px;
   padding-bottom: 2px;
 }
 
 .button:hover
 {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.15);
   cursor: pointer;
 }
 
@@ -95,4 +122,101 @@ a
 .video-buttons
 {
   text-align: center;
+}
+
+@media only screen and (max-width: 1155px)
+{
+  header
+  {
+    color: #FFFFFF;
+    height: 70px;
+    margin: 10px;
+    font-size: 25px;
+  }
+
+  #logo
+  {
+    margin-top: 15px;
+    float: left;
+    display: block;
+  }
+
+  nav
+  {
+    float: right;
+  }
+
+  .menu-options
+  {
+    list-style: none;
+  }
+
+  .li-menu
+  {
+    display: inline-block;
+  }
+
+  .home-button
+  {
+    display: inline-block;
+    padding-right: 10px;
+    padding-bottom: 2px;
+  }
+
+  .button
+  {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 2px;
+  }
+}
+
+
+@media only screen and (max-width: 860px)
+{
+  header
+  {
+    color: #FFFFFF;
+    height: 95px;
+    margin: 10px;
+    font-size: 25px;
+  }
+
+  #logo
+  {
+    margin-top: 15px;
+    float: left;
+    display: block;
+  }
+
+  nav
+  {
+    float: left;
+  }
+
+  .menu-options
+  {
+    list-style: none;
+  }
+
+  .li-menu
+  {
+    display: inline-block;
+  }
+
+  .home-button
+  {
+    display: inline-block;
+    padding-right: 13px;
+    padding-bottom: 2px;
+  }
+
+  .button
+  {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 2px;
+  }
 }
