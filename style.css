@@ -3,6 +3,7 @@ body
   background: url(img/background.jpg);
   margin-left: 7%;
   margin-right: 7%;
+  font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -48,9 +49,39 @@ footer
   bottom: 0;
 }
 
-footer p
+.foot
 {
-  float: left;
+  display: flex;
+}
+
+.foot>div
+{
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+}
+
+.f-first
+{
+  text-align: left;
+  width: 265px;
+  margin-right: 19%;
+  justify-content: left;
+}
+
+.f-second
+{
+  text-align: center;
+  width: 175px;
+  margin-right: 30%;
+  justify-content: center;
+}
+
+.f-third
+{
+  text-align: right;
+  width: 120px;
+  justify-content: right;
 }
 
 .footer-ul
@@ -60,8 +91,7 @@ footer p
   text-align: right;
 }
 
-
-div
+.body
 {
   background: rgba(255,255,255,1);
   color: #000000;
@@ -140,6 +170,11 @@ a
 
 @media only screen and (max-width: 1155px)
 {
+  .foot
+  {
+    flex-flow: row wrap;
+  }
+
   header
   {
     color: #FFFFFF;
@@ -189,6 +224,11 @@ a
 
 @media only screen and (max-width: 860px)
 {
+  .foot
+  {
+    flex-flow: row wrap;
+  }
+
   header
   {
     color: #FFFFFF;
